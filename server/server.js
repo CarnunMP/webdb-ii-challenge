@@ -1,6 +1,8 @@
 const express = require('express');
 const carsRouter = require('./cars/carsRouter');
 
+console.log(`process.env.NODE_ENV: ${process.env.NODE_ENV}`);
+
 const server = express();
 
 server.use(express.json());
